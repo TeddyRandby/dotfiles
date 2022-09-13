@@ -10,4 +10,4 @@ sudo apt-get install neovim -y
 git clone https://github.com/TeddyRandby/nvim-config.git ~/.config/nvim
 git clone https://github.com/TeddyRandby/tmux-config.git ~/.config/tmux
 
-echo "export TERM=xterm-256colors" | ~/.profile
+echo "export TERM=xterm-256color" >> ~/.profile
