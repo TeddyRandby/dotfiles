@@ -20,3 +20,5 @@ git clone https://github.com/TeddyRandby/tmux-config.git ~/.config/tmux
 ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
 
 echo "export TERM=xterm-256color" >> ~/.profile
+
+echo "alias e=\"nnn -e\"" >> ~/.profile
