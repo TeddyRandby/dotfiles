@@ -5,7 +5,7 @@ sudo apt upgrade -y
 sudo apt-get install software-properties-common -y
 sudo add-apt-repository ppa:neovim-ppa/stable -y
 sudo apt-get update
-sudo apt-get install ranger neovim -y
+sudo apt-get install nnn neovim -y
 
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[0-35.]+')
 
