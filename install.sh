@@ -2,13 +2,17 @@ sudo apt update
 
 sudo apt upgrade -y
 
-sudo apt install neovim
+curl -Lo nvim.tgz https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
+
+tar xvzf nvim.tgz
+
+sudo cp nvim-linux64/bin/nvim /usr/local/bin/
 
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[0-35.]+')
 
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 
-sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
+tar xf lazygit.tar.gz -C /usr/local/bin lazygit
 
 git clone https://github.com/TeddyRandby/nvim-config.git ~/.config/nvim
 
