@@ -6,7 +6,9 @@ curl -Lo nvim.tgz https://github.com/neovim/neovim/releases/download/stable/nvim
 
 tar xvzf nvim.tgz
 
-sudo cp nvim-linux64/bin/nvim /usr/local/bin/
+sudo cp -r nvim-linux64/bin/* /usr/local/bin/
+sudo cp -r nvim-linux64/lib/* /usr/local/lib/
+sudo cp -r nvim-linux64/share/* /usr/local/share/
 
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[0-35.]+')
 
