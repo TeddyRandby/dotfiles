@@ -2,10 +2,7 @@ sudo apt update
 
 sudo apt upgrade -y
 
-sudo apt-get install software-properties-common -y
-sudo add-apt-repository ppa:neovim-ppa/stable -y
-sudo apt-get update
-sudo apt-get install nnn neovim -y
+sudo apt install neovim
 
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[0-35.]+')
 
