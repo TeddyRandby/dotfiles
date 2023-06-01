@@ -8,10 +8,8 @@ sudo apt upgrade -y
 
 ./install_lg.sh
 
-git clone https://github.com/TeddyRandby/nvim-config.git ~/.config/nvim
-
 git clone https://github.com/TeddyRandby/tmux-config.git ~/.config/tmux
 
-echo "export TERM=xterm-256color" >> ~/.profile
+git clone https://github.com/TeddyRandby/nvim-config.git ~/.config/nvim
 
-echo "alias e=\"nnn -e\"" >> ~/.profile
+echo "export TERM=xterm-256color" >> ~/.profile
