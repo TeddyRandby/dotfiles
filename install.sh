@@ -18,7 +18,7 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
 # Clone neovim and tmux configs
-git clone https://github.com/TeddyRandby/tmux-config.git ~/.config/tmux
+git clone --recursive https://github.com/TeddyRandby/tmux-config.git ~/.config/tmux
 git clone https://github.com/TeddyRandby/nvim-config.git ~/.config/nvim
 
 echo "echo \"\$OPENAPI_KEY\"" >> ~/.config/openapikey.sh
